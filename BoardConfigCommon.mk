@@ -133,13 +133,17 @@ include device/qcom/sepolicy-legacy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 
-# TWRP
-ifeq ($(WITH_TWRP),true)
-TARGET_RECOVERY_DEVICE_DIRS += $(PLATFORM_PATH)/twrp
-TW_INCLUDE_CRYPTO := true
-TW_CRYPTO_USE_SBIN_VOLD := true
+# TWRP specific build flags
 TW_THEME := portrait_hdpi
-endif
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TW_NO_USB_STORAGE := true
+TW_INCLUDE_JB_CRYPTO := false
+TW_NO_SCREEN_BLANK := true
+TW_EXCLUDE_ENCRYPTED_BACKUPS := true
+TW_INCLUDE_L_CRYPTO := true
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
+TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
