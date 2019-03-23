@@ -144,6 +144,9 @@ TW_CRYPTO_USE_SBIN_VOLD := true
 TW_THEME := portrait_hdpi
 endif
 
+# Dex2oat
+WITH_DEXPREOPT := false
+
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
 BOARD_WLAN_DEVICE                := qcwcn
