@@ -16,11 +16,11 @@ ro.config.vc_call_vol_steps=7
 
 # Bluetooth
 vendor.qcom.bluetooth.soc=pronto
-ro.bluetooth.hfp.ver=1.7
+ro.vendor.bluetooth.hfp.ver=1.7
 ro.qualcomm.bt.hci_transport=smd
 
-ro.bluetooth.dun=false
-ro.bluetooth.sap=false
+ro.vendor.bluetooth.dun=false
+ro.vendor.bluetooth.sap=false
 
 # Camera
 camera2.portability.force_api=1
