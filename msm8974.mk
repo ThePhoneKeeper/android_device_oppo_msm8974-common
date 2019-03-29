@@ -73,10 +73,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librmnetctl
 
-# OTA
-PRODUCT_PACKAGES += \
-    ResurrectionOTA
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
