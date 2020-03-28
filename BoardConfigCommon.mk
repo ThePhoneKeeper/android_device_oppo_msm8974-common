@@ -126,14 +126,6 @@ include device/qcom/sepolicy-legacy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 
-# TWRP
-ifeq ($(WITH_TWRP),true)
-TARGET_RECOVERY_DEVICE_DIRS += $(PLATFORM_PATH)/twrp
-TW_INCLUDE_CRYPTO := true
-TW_CRYPTO_USE_SBIN_VOLD := true
-TW_THEME := portrait_hdpi
-endif
-
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
 BOARD_WLAN_DEVICE                := qcwcn
